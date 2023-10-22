@@ -1,0 +1,22 @@
+/* LandingPage.css */
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+.navbar {
+    background-color: whitesmoke; 
+    padding: 10px 0; /* Padding for top and bottom */
+    margin : 0;
+    border-bottom: 1px solid #E7E7E7;
+    display: flex;
+}
+
+.logo-text {
+    color: #0276b1;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
