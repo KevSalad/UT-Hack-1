@@ -1,0 +1,197 @@
+/* SignUpPage.css */
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.colorsplit {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+.topHalfSplit{
+    flex: 6;
+    background-color: #00a693;
+}
+
+.bottomHalfSplit{
+    flex: 4;
+    background-color: whitesmoke
+}
+
+.bannerHalf, .loginHalf {
+    flex: 1;
+    padding: 20px;
+}
+
+.bannerHalf img{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.loginHalf .loginHeading {
+    text-align: center;
+    margin: 10px;
+}
+
+.loginHalf form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginHalf label {
+    display: block;
+}
+
+.loginHalf .form-group {
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.loginHalf input {
+    height: 30px;
+    background-color: #f4f4f4;
+    border: 2px solid #00a693;
+    border-radius: 5px;
+}
+
+.loginHalf .emailInput, .loginHalf .passwordInput, .loginHalf .submitButton{
+    width: 100%; 
+}
+
+.submitButton {
+    background-color: #00a693; /* Change to desired color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.submitButton:hover {
+    background-color: rgb(127, 151, 232);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.forgotPassword {
+    text-align: right;
+    margin-top: -20px;
+}
+
+.loginbox {
+    position: relative;
+    z-index: 1;
+    width: 65%;
+    height: 400px;
+    margin: 80px auto 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    background-color: whitesmoke; 
+    padding-left: 15px;
+    margin : 0;
+    border-bottom: 1px solid #E7E7E7;
+    display: flex;
+}
+
+.logo-text {
+    color: #0276b1;
+}
+
+.left-side {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side li {
+    margin-right: 20px; /* Add spacing between list items */
+}
+  
+/* .left-side li:last-child {
+    margin-right: 0; } /* Remove margin from the last list item */ 
+  
+.left-side li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* .left-side li a:hover {
+    border-bottom: 2px solid #fff;
+} */
+  
+.right-side {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push items to the right */
+    padding-right: 25px;
+}
+
+.right-side .sign-button {
+    margin-left: 25px;
+}
+
+.button {
+    text-decoration: none;
+}
+
+.contact-button {
+    color: #0276b1; 
+    border: 1px solid #007bff;
+    border-radius: 4px; 
+    padding: 8px 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s,  transform 0.3s;
+}
+  
+.contact-button:hover {
+    background-color: royalblue;
+    color: #fff; 
+    transform: scale(1.05);
+}
+
+/* Your CSS file */
+.sign-button {
+    background-color: #0276b1; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 8px 20px;
+    font-size: 13px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+  
+.sign-button:hover {
+    background-color: rgb(127, 151, 232);
+    color: #fff; 
+    transform: scale(1.05);
+}
