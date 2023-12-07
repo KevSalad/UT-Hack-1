@@ -1,0 +1,380 @@
+/* Dashboard Background */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.b-div {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Center the divs horizontally */
+    transform: translateX(-50%); /* Adjust to center the divs */
+    width: 90%; /* Adjust the width as desired */
+    height: 50%; /* Set height to 50% to stack them on top of each other */
+    z-index: -1;
+}
+  
+.top-div {
+    background-color: #9FAF90;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+} 
+  
+.bot-div {
+    /* background-color: whitesmoke; */
+    top: 50%; /* Position the bot-div below the top-div */
+}
+  
+.dashboard {
+    position: relative;
+    z-index: 1;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 70vw;
+    height: 70vh;
+    text-align: center;
+}
+
+.user {
+    position: relative; 
+    top: 10%; 
+    left: 60%; 
+    transform: translate(-50%, -50%); /* Center the text in the middle of its container */
+  }
+
+/* Grid Items */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+  
+.grid-item {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #9FAF90;
+    margin: 10px; 
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    
+    max-width: calc(1000% - 20px);
+}
+
+/* GRID # 1 */
+
+.grid-item-1 {
+    flex-basis: 50%; 
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.left-dash {
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.left-dash p {
+    margin: 0;
+}
+
+.right-dash p {
+    margin: 0;
+}
+
+.right-dash {
+    padding-top: 10px;
+}
+
+.savings {
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.left-dash .small-text {
+    margin-top: 5px;
+}
+
+.small-text {
+    text-align: start;
+    font-size: 12px;
+    color: #9FAF90;
+    padding-bottom: 8px;
+}
+
+.left-dash button {
+    margin-top: 25px; 
+    background-color: #9FAF90;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s,  transform 0.3s;
+}
+
+.more-button:hover {
+    background-color: #549f93;
+    color: #fff; 
+    transform: scale(1.05);
+}
+
+.right-dash {
+    padding-right: 25px;
+}
+
+.right-dash .small-text {
+    text-align: end;
+}
+
+.balance {
+    white-space: nowrap;
+    font-weight: 1000;
+    font-size: 24px;
+    text-align: start;
+}
+  
+.grid-item-2 {
+    flex-basis: 25%; 
+    order: 2;
+    margin-top: 20px; 
+}
+
+/* GRID # 2 */
+
+.grid-item-2 {
+    background-image: url('/public/images/Courses-Picture.png'); 
+    background-size: cover; 
+    background-position: center; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.risk-div {
+    background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px; 
+    height: 75px; 
+    min-width: 175px; 
+}
+
+
+.risk {
+    font-weight: 1000;
+    font-size: 20px;
+    margin: 0;
+    text-align: start;
+}
+
+.risk-div .small-text {
+    color: rgb(35, 34, 34);
+    margin: 0;
+    text-align: start;
+}
+
+.course-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #9FAF90;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s,  transform 0.3s;
+}
+
+.course-button:hover {
+    background-color: #549f93;
+    color: #fff; 
+    transform: scale(1.05);
+}
+
+.grid-item-3 {
+    flex-basis: 25%; 
+    order: 3;
+    margin-top: 40px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+/* GRID # 3 */
+
+.t-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.t-text {
+    font-weight: 1000;
+    font-size: 20px;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.button-arrow {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
+    margin-right: 20px;
+    width: 35px;
+    /* transition: background-color 0.3s; */
+}
+
+/* APPLY A BUTTON TO THIS LATER */
+.see-more-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.see-more {
+    white-space: nowrap;
+    font-size: 10px;
+    color: #549f93;
+    font-weight: bold;
+}
+
+.svg-arrow {
+    background-color: whitesmoke;
+    border-radius: 20%;
+    margin-right: 10px;
+}
+
+.transaction-history {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 12px;
+}
+
+.transaction-history::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    border-bottom: 1px solid #000;
+}
+
+.date, .company, .category, .cost {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    width: 25%; 
+    text-align: start; 
+}
+
+.cost, .date {
+    font-weight: bold;
+    text-align: center; 
+}
+  
+.grid-item-4 {
+    flex-basis: 25%; 
+    order: 4;
+    margin-top: 40px;
+}
+
+/* GRID # 4 */
+
+.e-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.e-text {
+    font-weight: 1000;
+    font-size: 20px;
+    text-align: start;
+    padding-left: 20px;
+}
+
+.e-info {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.dropdown {
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.e-info .small-text {
+    padding-right: 10px;
+    margin: 0;
+}
+
+.cost-text {
+    margin: 0;
+    font-size: 20px;
+    align-self: start;
+    padding-right: 10px;
+    border-bottom: 1px solid #000;
+}
+  
+.grid-item-3, .grid-item-4 {
+    min-height: 270px;
+    min-height: 270px;
+}
+
+
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .grid-container {
+      flex-direction: row; 
+      max-height: auto;
+      overflow: scroll;
+    }
+  
+    .grid-item {
+      max-width: 100%;
+      margin-right: 0;
+    }
+
+    .grid-item-2,
+    .grid-item-3 {
+        margin-top: 20px; 
+  }
+
+    .footer {
+        display: none; 
+    }
+  }
+  
+  
+  
+  
+  
+  
+

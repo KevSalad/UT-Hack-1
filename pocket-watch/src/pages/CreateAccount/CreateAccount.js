@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from 'react';
 import { Link } from 'react-router-dom';
-import './SignUpPage.css';
+import './CreateAccount.css';
 
 // Navbar Component
 function Navbar() {
@@ -32,14 +32,23 @@ function Navbar() {
     );
 }
 
+function ColorSplit() {
+    return (
+        <div className="colorsplit">
+            <div className="bottomHalfSplit"></div>
+            <div className="topHalfSplit"></div>
+        </div>
+    );
+}
+
 function LoginBox() {
     return (
         <div className="loginbox">
             <div className="bannerHalf">
-                <img src='/images/SignInPage.png' alt="Sign In Illustration" />
+                <img src='/images/Left-Vector-Art.svg' alt="Sign In Illustration" />
             </div>
             <div className="loginHalf">
-                <h2 className="loginHeading">Sign In</h2>
+                <h2 className="loginHeading">Create an account</h2>
                 <form>
                     <div className="form-group">
                         <label>Email Address</label>
@@ -48,30 +57,22 @@ function LoginBox() {
                     <div className="form-group">
                         <label>Password</label>
                         <input type="password" name="password" required className="passwordInput"/>
-                        <p className='forgotPassword'>Forgot Password?</p>
+                    </div>
+                    <div className="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" name="confirmPassword" required className="passwordInput" />
                     </div>
                     <button type="submit" className="submitButton">Sign In</button>
-                    <p class="texty">Dont have an account? <a href="/createAccount" class="blue-link">Create Account</a> </p>
-                    <a href="/dashboard" class="blue-link">Temp link</a> 
-                    
                 </form>
+            </div>
+            <div className="bannerHalf">
+                <img src='/images/Right-Vector-Art.svg' alt="Sign In Illustration" />
             </div>
         </div>
     );
 }
 
-function ColorSplit() {
-    return (
-        <div className="colorsplit">
-            <div className="topHalfSplit"></div>
-            <div className="bottomHalfSplit"></div>
-        </div>
-    );
-}
-
-
-// SignUpPage Component
-function SignUpPage() {
+function CreateAccount() {
     return (
         <div>
             <Navbar />
@@ -81,4 +82,4 @@ function SignUpPage() {
     );
 }
 
-export default SignUpPage;
+export default CreateAccount;
