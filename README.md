@@ -6,4 +6,4 @@
 Technologies:
 - React
 - MongoDB
-- React
+- Figma
